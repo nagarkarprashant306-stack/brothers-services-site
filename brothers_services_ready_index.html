@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="mr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101b32">
+<meta name="description" content="Brothers Services — Digital, Painting आणि Electrical सेवा एकाच ठिकाणी.">
+<title>Brothers Services | एक विश्वास, अनेक सेवा</title>
+<style>
+:root{--navy:#101b32;--navy2:#172844;--orange:#ff9d45;--cream:#f7f5f0;--ink:#172033;--muted:#657086;--white:#fff;--line:#e7e9ee}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{background:rgba(16,27,50,.97);color:white;position:sticky;top:0;z-index:5;border-bottom:1px solid #ffffff18}
+.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:19px;letter-spacing:.2px}
+.logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--orange),#ffd18a);color:var(--navy);display:grid;place-items:center;font-weight:900;font-size:17px;box-shadow:0 7px 20px #0002}
+nav{display:flex;gap:24px;font-size:14px;color:#e1e7f2}nav a:hover{color:var(--orange)}
+.hero{background:radial-gradient(ellipse at 85% 20%,#344b70 0,transparent 34%),linear-gradient(120deg,var(--navy),#172943 70%,#263b58);color:white;padding:86px 0 78px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:48px}
+.kicker{display:inline-flex;align-items:center;gap:8px;color:#ffd4a5;font-size:13px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase}
+.kicker:before{content:"";width:24px;height:2px;background:var(--orange)}
+h1{font-size:clamp(38px,5.5vw,66px);line-height:1.12;letter-spacing:-1.5px;margin:18px 0}
+h1 span{color:var(--orange)}.hero p{max-width:570px;color:#d0d9e8;font-size:17px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:12px;padding:13px 19px;font-weight:700;font-size:14px;border:1px solid transparent;transition:.2s}
+.btn.primary{background:var(--orange);color:var(--navy)}.btn.primary:hover{background:#ffb76f;transform:translateY(-2px)}
+.btn.ghost{border-color:#ffffff55;color:white}.btn.ghost:hover{background:#ffffff12}
+.hero-art{min-height:300px;position:relative;display:grid;place-items:center}
+.orbit{width:min(340px,78vw);aspect-ratio:1;border:1px solid #ffffff25;border-radius:50%;display:grid;place-items:center;position:relative}
+.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #ffffff18;border-radius:50%}.orbit:before{inset:25px}.orbit:after{inset:52px}
+.center-mark{width:130px;height:130px;background:linear-gradient(135deg,#ffbd70,var(--orange));border-radius:36px;display:grid;place-items:center;color:var(--navy);font-size:38px;font-weight:900;box-shadow:0 20px 70px #0004;transform:rotate(-7deg)}
+.float{position:absolute;background:#ffffff12;border:1px solid #ffffff28;backdrop-filter:blur(10px);padding:13px 16px;border-radius:15px;font-size:13px;font-weight:700}
+.float.one{top:14%;left:0}.float.two{right:-1%;top:43%}.float.three{bottom:8%;left:9%}
+section{padding:76px 0}.section-head{max-width:660px;margin-bottom:32px}.eyebrow{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#bf6a22;font-weight:800}
+h2{font-size:clamp(28px,4vw,42px);line-height:1.2;margin:8px 0 12px;letter-spacing:-.6px}.section-head p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:white;border:1px solid var(--line);border-radius:22px;padding:27px;box-shadow:0 10px 35px #18264108;transition:.25s;display:flex;flex-direction:column;min-height:275px}
+.card:hover{transform:translateY(-5px);box-shadow:0 20px 45px #18264112}
+.iconbox{height:54px;width:54px;border-radius:16px;display:grid;place-items:center;background:#fff0df;color:#a95412;font-size:25px;margin-bottom:20px}
+.card:nth-child(2) .iconbox{background:#e7eefb;color:#254d8c}.card:nth-child(3) .iconbox{background:#e5f4ed;color:#23714d}
+.card h3{margin:0 0 7px;font-size:22px}.card p{margin:0;color:var(--muted);font-size:14px}.card a{margin-top:auto;padding-top:22px;font-weight:800;font-size:14px;color:#a95412}
+.band{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.why-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center}
+.why-panel{background:var(--navy);color:white;padding:32px;border-radius:24px;position:relative;overflow:hidden}
+.why-panel:after{content:"+";position:absolute;right:16px;bottom:-60px;font-size:210px;line-height:1;color:#ffffff09}
+.why-panel h3{font-size:26px;margin:0 0 12px}.why-panel p{color:#cbd5e4;margin:0}
+.points{display:grid;gap:18px}.point{display:flex;gap:14px;align-items:flex-start}.tick{flex:0 0 28px;height:28px;border-radius:9px;background:#ffecd9;color:#a95412;display:grid;place-items:center;font-weight:900}.point h4{margin:0 0 3px}.point p{margin:0;color:var(--muted);font-size:14px}
+.contact{background:var(--navy);color:white;padding:64px 0}.contact-grid{display:flex;justify-content:space-between;align-items:center;gap:24px}.contact p{color:#cbd5e4;margin:8px 0 0}.contact h2{margin:0;max-width:620px}
+footer{background:#0b1324;color:#aab5c7;padding:23px 0;font-size:12px}.footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:760px){nav{gap:12px;font-size:12px}.nav{min-height:66px}.brand{font-size:16px}.hero{padding:62px 0 48px}.hero-grid,.why-grid{grid-template-columns:1fr;gap:30px}.hero-art{min-height:250px}.orbit{width:250px}.center-mark{width:100px;height:100px;border-radius:28px}.float.one{left:5%}.float.two{right:1%}.cards{grid-template-columns:1fr}.card{min-height:0}.contact-grid{align-items:flex-start;flex-direction:column}section{padding:56px 0}}
+@media(max-width:400px){nav a:nth-child(2){display:none}.hero p{font-size:15px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#home"><span class="logo">B+</span><span>Brothers Services</span></a>
+<nav aria-label="मुख्य मेनू"><a href="#services">सेवा</a><a href="#about">आमच्याबद्दल</a><a href="#contact">संपर्क</a></nav>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+<div><div class="kicker">एक विश्वास, अनेक सेवा</div>
+<h1>तुमच्या प्रत्येक कामासाठी<br><span>एकच टीम.</span></h1>
+<p>Digital, Painting आणि Electrical सेवा — कामात गुणवत्ता, संवादात स्पष्टता आणि सेवेत विश्वास.</p>
+<div class="actions"><a class="btn primary" href="#services">आमच्या सेवा पाहा&nbsp; ↗</a><a class="btn ghost" href="#contact">संपर्क करा</a></div>
+</div>
+<div class="hero-art" aria-label="Brothers Services चे दृश्य"><div class="orbit"><div class="center-mark">B+</div><div class="float one">✦ Digital</div><div class="float two">▧ Painting</div><div class="float three">ϟ Electrical</div></div></div>
+</div></section>
+<section id="services"><div class="wrap">
+<div class="section-head"><div class="eyebrow">आमच्या सेवा</div><h2>तुमच्या गरजेनुसार योग्य सेवा.</h2><p>तीन वेगवेगळ्या कौशल्यांच्या सेवा, एका विश्वासार्ह नावाखाली.</p></div>
+<div class="cards">
+<article class="card"><div class="iconbox">✦</div><h3>Digital Brother</h3><p>डिजिटल कामांसाठी सोपे आणि आधुनिक उपाय. तुमच्या गरजेनुसार डिजिटल सेवा व ऑनलाइन मदत.</p><a href="#contact">चौकशी करा ↗</a></article>
+<article class="card"><div class="iconbox">▧</div><h3>Painter Brothers</h3><p>घर, बंगला आणि इमारतींचे पेंटिंग. इंटिरियर, एक्स्टिरियर आणि पृष्ठभागाच्या तयारीसाठी सेवा.</p><a href="#contact">पेंटिंगसाठी चौकशी ↗</a></article>
+<article class="card"><div class="iconbox">ϟ</div><h3>Vidyut Brothers</h3><p>घरगुती इलेक्ट्रिकल कामे, लाइट फिटिंग आणि वायरिंगसाठी सेवा. कामापूर्वी तपशील व अंदाज स्पष्ट.</p><a href="#contact">इलेक्ट्रिकल चौकशी ↗</a></article>
+</div></div></section>
+<section class="band" id="about"><div class="wrap why-grid">
+<div class="section-head"><div class="eyebrow">आमची ओळख</div><h2>काम चांगलं. संवाद स्पष्ट. विश्वास कायम.</h2><p>Brothers Services मध्ये प्रत्येक ग्राहकाला योग्य माहिती, कामाचा स्पष्ट तपशील आणि व्यवस्थित सेवा देण्यावर भर आहे.</p></div>
+<div class="why-panel"><h3>एकाच ठिकाणी अनेक पर्याय.</h3><p>तुम्हाला डिजिटल मदत हवी असो, पेंटिंगचे काम असो किंवा इलेक्ट्रिकल सेवा — योग्य टीमशी संपर्क साधा.</p></div>
+<div class="points">
+<div class="point"><div class="tick">✓</div><div><h4>स्पष्ट संवाद</h4><p>काम सुरू करण्यापूर्वी गरज, व्याप्ती आणि अंदाज यावर चर्चा.</p></div></div>
+<div class="point"><div class="tick">✓</div><div><h4>कामानुसार सेवा</h4><p>प्रत्येक ब्रँडची स्वतंत्र सेवा आणि तुमच्या कामावर लक्ष.</p></div></div>
+<div class="point"><div class="tick">✓</div><div><h4>थेट संपर्क</h4><p>चौकशीसाठी फोन किंवा WhatsApp संपर्क तपशील जोडल्यानंतर ग्राहक थेट संपर्क करू शकतात.</p></div></div>
+</div></div></section>
+<section class="contact" id="contact"><div class="wrap contact-grid"><div><div class="eyebrow">संपर्क</div><h2>तुमचं काम सांगूया, योग्य सेवा निवडूया.</h2><p>फोन नंबर आणि WhatsApp लिंक जोडण्यासाठी पुढील आवृत्तीत संपर्क तपशील अपडेट करू.</p></div><a class="btn primary" href="mailto:hello@brothersservices.in?subject=Brothers%20Services%20Enquiry">ईमेलद्वारे चौकशी ↗</a></div></section>
+</main>
+<footer><div class="wrap footer-row"><span>© <span id="year">2026</span> Brothers Services. सर्व हक्क राखीव.</span><span>Digital Brother · Painter Brothers · Vidyut Brothers</span></div></footer>
+</body></html>
